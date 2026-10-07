@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+:root {
+  --font-serif-display: 'Cinzel', serif;
+  --font-serif-body: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-serif-body);
+  background-color: #0b0a08;
+  color: #ede6d8;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.perspective-1000 {
+  perspective: 1200px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+/* Realistic wooden bookshelf beam */
+.wood-shelf {
+  background: linear-gradient(180deg, #2b180d 0%, #1e1008 40%, #0d0703 100%);
+  box-shadow: 
+    inset 0 2px 4px rgba(255, 255, 255, 0.15),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.8),
+    0 15px 30px rgba(0, 0, 0, 0.95);
+}
+
+.shelf-niche {
+  background: radial-gradient(ellipse at 50% 20%, #1a120b 0%, #0b0805 100%);
+}
